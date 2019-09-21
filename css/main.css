@@ -1749,7 +1749,7 @@ img:hover {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ee9534;
+  background: #ff208a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2535,4 +2535,7 @@ a {
 }
 .links-of-blogroll {
   text-align: left;
+}
+.nav-level-2 > .nav-child {
+  display: none !important;
 }
