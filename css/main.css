@@ -355,7 +355,7 @@ body {
 }
 .header-inner {
   margin: 0 auto;
-  padding: 100px 0 70px;
+  padding: 40px 0 10px;
   width: 700px;
 }
 @media (min-width: 1200px) {
@@ -1313,7 +1313,7 @@ article:last-child .post-eof {
   display: none;
 }
 .posts-expand {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 @media (max-width: 767px) {
   .posts-expand {
@@ -1749,7 +1749,7 @@ img:hover {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #90ffa7;
+  background: #b8ebf1;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
