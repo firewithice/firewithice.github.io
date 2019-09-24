@@ -72,8 +72,8 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
       copy_button: '复制',
@@ -194,17 +194,6 @@
       
       
         
-        <li class="menu-item menu-item-top">
-      
-    
-
-    <a href="/firewithice.github.io/top/" rel="section"><i class="menu-item-icon fa fa-fw fa-signal"></i> <br>排行榜</a>
-
-  </li>
-      
-      
-      
-        
         <li class="menu-item menu-item-tags">
       
     
@@ -245,11 +234,49 @@
     <a href="/firewithice.github.io/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
 
   </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-search">
+      
+    
+
+    <a href="/firewithice.github.io/search/" rel="section"><i class="menu-item-icon fa fa-fw fa-search"></i> <br>搜索</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
   </ul>
 
     
 
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
@@ -719,7 +746,7 @@
                 
               
 
-              <time title="创建时间：2019-09-24 08:40:07 / 修改时间：11:33:14" itemprop="dateCreated datePublished" datetime="2019-09-24T08:40:07+08:00">2019-09-24</time>
+              <time title="创建时间：2019-09-24 08:40:07 / 修改时间：12:59:33" itemprop="dateCreated datePublished" datetime="2019-09-24T08:40:07+08:00">2019-09-24</time>
             </span>
           
             
@@ -751,7 +778,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h4><p>  在博客目录下执行如下命令新建一篇文章</p><p>  <code>$ hexo new [layout] &lt;title&gt;</code></p><p>如果未指定文章的布局（layout），则默认使用 <code>post</code> 布局，生成的文档存放于 <code>source\_posts\</code> 目录下，打开后使用 Markdown 语法进行写作，保存后刷新浏览器即可看到文章。</p>
+          <h5 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h5><p>  在博客目录下执行如下命令新建一篇文章</p><p>  <code>$ hexo new [layout] &lt;title&gt;</code></p><p>如果未指定文章的布局（layout），则默认使用 <code>post</code> 布局，生成的文档存放于 <code>source\_posts\</code> 目录下，打开后使用 Markdown 语法进行写作，保存后刷新浏览器即可看到文章。</p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1001,6 +1028,8 @@
 
 
 
+
+  <script src="/firewithice.github.io/js/local-search.js?v=7.4.0"></script>
 
 
 

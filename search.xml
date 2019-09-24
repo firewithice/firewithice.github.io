@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[孤独本是常态，逢人不必言深]]></title>
+    <url>%2Ffirewithice.github.io%2F2019%2F09%2F24%2F%E5%AF%BB%E4%BC%8A%E4%BA%BA%2F</url>
+    <content type="text"><![CDATA[前言酒逢知己千杯少，话不投机半句多 亲情不能永伴左右，爱情不能代替一切，友情不能随时出现，唯有影子才能与自己不离不弃。 或许，孤独本身就是人生的一种常态。 有些路注定要一个人走，有些风景注定要一个人去看，学会坦然行走，享受孤独，在孤独的路上去欣赏不孤独的风景。 无人与我立黄昏，无人问我粥可温《其一》无人与我立黄昏，无人问我粥可温。无人与我捻熄灯，无人共我书半生。无人陪我夜已深，无人与我把酒分。无人拭我相思泪，无人梦我与前尘。无人陪我顾星辰，无人醒我茶已冷。无人听我述衷肠，无人解我心头梦。无人拘我言中泪，无人愁我独行路。回首向来萧瑟处，无人等在灯火阑珊处。 《其二》愿与执手立黄昏，愿与品茗粥尚温。愿与添香捻熄灯，愿与捧卷书半生。愿与剪烛夜已深，愿与对弈把酒分。愿与叠袖相拭泪，愿与入梦共前尘。愿与赏月顾星辰，愿与烹茶清未冷。愿与静听诉衷肠，愿与话君心头梦。愿与解语心中泪，愿与共行天下路。回首灯火阑珊处，那人一如初见立中宵。 《其三》残阳与我立黄昏，阿婆问我粥可温。飞蛾与我捻熄灯，笔砚共我书半生。孤月陪我夜已深，往事与我把酒分。春风拭我相思泪，睡梦与我恋前尘。微风陪我顾星辰，案几知我茶已冷。归燕听我诉衷肠，暗香解我心头梦。素衣拘我言中泪，竹杖伴我独行路。回首向来萧瑟处，那人却在灯火阑珊处。]]></content>
+      <categories>
+        <category>闲情逸致</category>
+      </categories>
+      <tags>
+        <tag>情感</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[小试牛刀]]></title>
+    <url>%2Ffirewithice.github.io%2F2019%2F09%2F24%2F%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80%2F</url>
+    <content type="text"><![CDATA[开始写作 在博客目录下执行如下命令新建一篇文章 $ hexo new [layout] &lt;title&gt;如果未指定文章的布局（layout），则默认使用 post 布局，生成的文档存放于 source\_posts\ 目录下，打开后使用 Markdown 语法进行写作，保存后刷新浏览器即可看到文章。 布局布局是什么概念呢，你可以理解为新建文档时的一个模板，基于布局生成的文档将会继承布局的样式。 Hexo 默认有三种布局：post、 page 和 draft，用户可以在 scaffolds 目录下新建文档来自定义布局格式，还可以修改站点配置文件中的 default_layout参数来指定生成文档时的默认布局。 文章（post）基于 post 布局生成的文档存在于 source\_posts\ 目录下，该目录下的文档会作为博客正文显示在网站中。 页面（page）page 布局用于生成类似 首页 和 归档 这样的页面。默认的 Next 主题样式中只包含首页和归档这两个链接，可以通过修改主题配置文件中的 menu 字段来新增更多页面菜单。 themes/next/_config.yml123456menu: home: / || home about: /about/ || user+ tags: /tags/ || tags+ categories: /categories/ || th+ archives: /archives/ || archive diff:true12345678'use struct'; highlight: enable: true line_number: false- auto_detect: false+ auto_detect: true tab_replace:]]></content>
+      <categories>
+        <category>点滴记录</category>
+      </categories>
+      <tags>
+        <tag>工作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[markdown 语法教学]]></title>
+    <url>%2Ffirewithice.github.io%2F2019%2F09%2F02%2Ffirewithice%2F</url>
+    <content type="text"><![CDATA[本文介绍 Hexo 博客的写作技巧。第一章中介绍了 Hexo 中写作相关的基本概念，包括三种基本布局，标签与分类，Markdown 写作语法。第二章中介绍了 Hexo 中常用的内置标签，包括 note 标签、label 标签、button 标签、tab 标签以及代码块的高级用法，通过使用写作标签可以快速编写样式丰富的文档片段。 标题示例： 123456# 这是一级标题## 这是二级标题### 这是三级标题#### 这是四级标题##### 这是五级标题###### 这是六级标题 效果如下： # 这是一级标题## 这是二级标题 这是三级标题这是四级标题这是五级标题这是六级标题 字体示例： 1234**这是加粗的文字***这是倾斜的文字*`***这是斜体加粗的文字***~~这是加删除线的文字~~ 效果如下： 这是加粗的文字这是倾斜的文字`这是斜体加粗的文字这是加删除线的文字 引用示例： 123&gt;这是引用的内容&gt;&gt;这是引用的内容&gt;&gt;&gt;&gt;这是引用的内容 效果如下： 这是引用的内容 这是引用的内容 这是引用的内容 分割线示例： 1234-------******** 效果如下： 图片语法： 1234![图片alt](图片地址 ''图片title'')图片alt就是显示在图片下面的文字，相当于对图片内容的解释。图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加 示例： 12![我的头像](https://www.ofind.cn/images/avatar.png)![我的头像](/images/avatar.png) 效果如下： 上传本地图片直接点击导航栏的图片标志，选择图片即可 超链接语法： 12[超链接名](超链接地址 "超链接title")title可加可不加 示例： 12[简书](http://jianshu.com)[百度](http://baidu.com) 效果如下： 简书百度 列表·无序列表示例： 12345- 列表内容+ 列表内容* 列表内容注意：- + * 跟内容之间都要有一个空格 效果如下： 列表内容 列表内容 列表内容 ·有序列表示例： 123451.列表内容2.列表内容3.列表内容注意：序号跟内容之间要有空格 效果如下： 列表内容 列表内容 列表内容]]></content>
+      <categories>
+        <category>写作技巧</category>
+      </categories>
+      <tags>
+        <tag>工作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[唯一的你]]></title>
+    <url>%2Ffirewithice.github.io%2F2019%2F09%2F02%2F%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[是不是觉得工作上或学校里总有人比你更优秀更有魅力？可是别忘了——你也是独一无二的，世界上再也没有跟你一模一样的另一个人了。如果你总希望跟别人一样，那反倒会亲手毁掉自己的幸福与快乐。试着让别人接受真实的你，而不是按别人的期望去生活，这样你才能快乐生活！]]></content>
+      <categories>
+        <category>点滴记录</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[New Day New Life]]></title>
+    <url>%2Ffirewithice.github.io%2F2019%2F09%2F02%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[新的开始Occasionally, life can be undeniably, impossibly difficult. We are faced with challenges and events that can seem overwhelming, life-destroying to the point where it may be hard to decide whether to keep going. But you always have a choice. I worked in a finance job that I hated and I lived in a concrete jungle city with little greenery. I occupied my time with meaningless relationships and spent copious quantities of money on superficiality. I was searching for happiness and had no idea where to find it. It took something powerfully transform in my life to make me wake up. Wake up to some fundamental truths of life.This life is a gift if you want to accept it. No matter what the obstacle, you can make your life abundant with joy and you can live authentically. You choose life every day. But do you choose the life that you love every day?]]></content>
+      <categories>
+        <category>生活感悟</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+</search>
