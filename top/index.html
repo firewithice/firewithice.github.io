@@ -84,18 +84,18 @@
   };
 </script>
 
-  <meta name="description" content="Better late than never">
+  <meta name="description" content="AV.initialize(&quot;leancloud_appid&quot;, &quot;leancloud_appkey&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.descending(&apos;time&apos;);   query">
 <meta name="keywords" content="firewithice 烈焰冰封 聊胜于无">
 <meta property="og:type" content="website">
 <meta property="og:title" content="排行榜">
 <meta property="og:url" content="http://firewithice.github.io/firewithice.github.io/top/index.html">
 <meta property="og:site_name" content="Ice_fire&#39;s Blog">
-<meta property="og:description" content="Better late than never">
+<meta property="og:description" content="AV.initialize(&quot;leancloud_appid&quot;, &quot;leancloud_appkey&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.descending(&apos;time&apos;);   query">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-24T00:46:19.750Z">
+<meta property="og:updated_time" content="2019-09-24T03:38:13.515Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="排行榜">
-<meta name="twitter:description" content="Better late than never">
+<meta name="twitter:description" content="AV.initialize(&quot;leancloud_appid&quot;, &quot;leancloud_appkey&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.descending(&apos;time&apos;);   query">
   <link rel="canonical" href="http://firewithice.github.io/firewithice.github.io/top/">
 
 
@@ -311,7 +311,31 @@
       
       <div class="post-body">
         
-          
+          <div id="top"></div>
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script>AV.initialize("leancloud_appid", "leancloud_appkey");</script>
+<script type="text/javascript">
+  var time=0
+  var title=""
+  var url=""
+  var query = new AV.Query('Counter');
+  query.notEqualTo('id',0);
+  query.descending('time');
+  query.limit(1000);
+  query.find().then(function (todo) {
+    for (var i=0;i<1000;i++){
+      var result=todo[i].attributes;
+      time=result.time;
+      title=result.title;
+      url=result.url;
+      // var content="<a href='"+"https://hoxis.github.io"+url+"'>"+title+"</a>"+"<br>"+"<font color='#fff'>"+"阅读次数："+time+"</font>"+"<br><br>";
+      var content="<p>"+"<font color='#1C1C1C'>"+"【文章热度:"+time+"℃】"+"</font>"+"<a href='"+"https://hoxis.github.io"+url+"'>"+title+"</a>"+"</p>";
+      document.getElementById("top").innerHTML+=content
+    }
+  }, function (error) {
+    console.log("error");
+  });
+</script>
         
       </div>
       
@@ -403,7 +427,7 @@
             <a href="/firewithice.github.io/tags/">
           
         
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
