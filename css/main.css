@@ -1749,7 +1749,7 @@ img:hover {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #29e93d;
+  background: #7e930d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2657,7 +2657,7 @@ a {
   display: none !important;
 }
 .back-to-top {
-  right: 60px;
+  right: 125px;
   width: 70px;
   height: 900px;
   top: -900px;
@@ -2670,7 +2670,7 @@ a {
 }
 .back-to-top.back-to-top-on {
   bottom: unset;
-  top: calc(100vh - 900px - 200px);
+  top: calc(100vh - 900px - 380px);
 }
 .wobbleTransparentBK {
   background-color: rgba(0,0,0,0) !important;
